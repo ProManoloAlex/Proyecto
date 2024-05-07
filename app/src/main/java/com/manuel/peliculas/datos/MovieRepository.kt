@@ -14,7 +14,7 @@ class MovieRepository @Inject constructor(
 
     suspend fun getMovies(page: Int): MutableList<Item_peliculas> {
         val response = apiService.getMovies(page)
-        Permisos_key.pagesTotal = response?.pTotal() ?: 1
+        Permisos_key.paginas_totales = response?.pTotal() ?: 1
         return response?.results?.map { it.toDomain() } as MutableList<Item_peliculas>
     }
 

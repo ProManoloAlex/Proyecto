@@ -9,6 +9,6 @@ data class Item_peliculas(
 )
 
 fun ResultApi.toDomain(): Item_peliculas {
-    val poster = "${Permisos_key.PATH_IMG}${this.posterPath}"
+    val poster = "${Permisos_key.IMG}${this.posterPath}"
     return Item_peliculas(id, title, poster)
 }

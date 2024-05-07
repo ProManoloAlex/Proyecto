@@ -80,7 +80,7 @@ class Listas : Fragment() {
 
                     if (viewModel.status.value != ApiStatus.LOADING) {
                         if ((visibleItemCount + lastVisiblePosition) >= totalItemCount - 6) {
-                            if (viewModel.page < Permisos_key.pagesTotal) {
+                            if (viewModel.page < Permisos_key.paginas_totales) {
                                 viewModel.page++
                             }
                             //Log.d("tag", "${viewModel.page}")

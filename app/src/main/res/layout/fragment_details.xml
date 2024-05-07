@@ -43,7 +43,7 @@
             app:expandedTitleTextColor="@color/white"
             app:extraMultilineHeightEnabled="false"
             app:contentScrim="@color/black_transparent"
-            tools:title="Avatar">
+            tools:title="Peliculas">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tvBudget"
+                android:id="@+id/tvPresupuesto"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -126,7 +126,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
             <TextView
-                android:id="@+id/tvPopularity"
+                android:id="@+id/tvPopularidad"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -151,7 +151,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <TextView
-                android:id="@+id/tvReleaseData"
+                android:id="@+id/tvFecha"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -176,7 +176,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <TextView
-                android:id="@+id/tvGenders"
+                android:id="@+id/tvGenero"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -201,7 +201,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
-                android:id="@+id/tvRuntime"
+                android:id="@+id/tvDuracion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -241,16 +241,16 @@
                 android:text="@string/text_empty" />
 
             <TextView
-                android:id="@+id/tvOverview"
+                android:id="@+id/tvDescripcion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:paddingStart="5dp"
                 android:textSize="@dimen/text_normal"
-                app:layout_constraintEnd_toEndOf="@+id/tvGenders"
+                app:layout_constraintEnd_toEndOf="@+id/tvGenero"
                 app:layout_constraintStart_toStartOf="@+id/textView5"
                 app:layout_constraintTop_toBottomOf="@+id/textView5"
-                tools:text="Descripsion de la pelicula." />
+                tools:text="Descripcion de la pelicula." />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

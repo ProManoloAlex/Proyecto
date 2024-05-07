@@ -16,7 +16,7 @@ object Modulos {
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit {
-        return Retrofit.Builder().baseUrl(Permisos_key.BASE_URL)
+        return Retrofit.Builder().baseUrl(Permisos_key.URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

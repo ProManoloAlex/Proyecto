@@ -16,8 +16,8 @@ data class Detalles_item(
 )
 
 fun MovieDetailsModel.toDomain(): Detalles_item {
-    val backdropPath = if (backdropPath.isNullOrEmpty()) "" else "${Permisos_key.PATH_IMG}${this.backdropPath}"
-    val posterPath = "${Permisos_key.PATH_IMG}${this.posterPath}"
+    val backdropPath = if (backdropPath.isNullOrEmpty()) "" else "${Permisos_key.IMG}${this.backdropPath}"
+    val posterPath = "${Permisos_key.IMG}${this.posterPath}"
     val budget = if (this.budget == 0) "- - -" else getFormattedNumber(this.budget)
     val runtime = if (this.runtime == null) "" else "${this.runtime}"
 

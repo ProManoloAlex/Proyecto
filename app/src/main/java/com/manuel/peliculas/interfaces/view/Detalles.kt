@@ -81,23 +81,23 @@ class Detalles : Fragment() {
 
             if (it.overview.isEmpty()) {
                 binding.tvOverviewEmpty.visibility = View.VISIBLE
-                binding.tvOverview.visibility = View.GONE
+                binding.tvDescripcion.visibility = View.GONE
             } else {
                 binding.tvOverviewEmpty.visibility = View.GONE
-                binding.tvOverview.visibility = View.VISIBLE
-                binding.tvOverview.text = it.overview
+                binding.tvDescripcion.visibility = View.VISIBLE
+                binding.tvDescripcion.text = it.overview
             }
             binding.collapsingToolbar.title = it.title
-            binding.tvPopularity.text = it.popularity.toString()
-            binding.tvReleaseData.text = it.releaseDate
-            binding.tvBudget.text = it.budget
-            binding.tvGenders.text = it.genders
+            binding.tvPopularidad.text = it.popularity.toString()
+            binding.tvFecha.text = it.releaseDate
+            binding.tvPresupuesto.text = it.budget
+            binding.tvGenero.text = it.genders
             (if (it.runtime.isEmpty()) {
                 getString(R.string.text_empty)
             } else {
                 getString(R.string.runtimeLink, it.runtime)
             }).also { st ->
-                binding.tvRuntime.text = st }
+                binding.tvDuracion.text = st }
 
             Log.d("tag", it.genders)
         }
